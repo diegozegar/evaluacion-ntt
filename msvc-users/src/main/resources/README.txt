@@ -13,9 +13,10 @@ Paso 1: Requisitos
 
 Pasos para levantar la aplicación:
 ----------------------------------
-
+> git init
 > git clone https://github.com/diegozegar/evaluacion-ntt.git
 > cd evaluacion-ntt
+> cd msvc-users
 
 Paso 2: Base de Datos:
 --------------
@@ -63,8 +64,11 @@ CREATE TABLE phones (
 Paso 3: Build del proyecto:
 
 > abrir el proyecto
-> ejejctutar el siguiente comando Maven en consola o terminal del IDE
-mvn clean install
+> Ejecutar:
+
+mvn clean package
+mvn spring-boot:run
+
 
 > La aplicación arrancara en el puerto 8081.
 
